@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.allyx.helpdesk_schedule.MainActivity"
+    android:background="#3c3a3a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Helpdesk Schedule"
+        android:textSize="40sp"
+        android:id="@+id/textViewTitle"
+        android:textColor="#c94a3c" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:layout_alignBaseline="@+id/editTextName"
+            android:textSize="20sp"
+            android:id="@+id/textViewName"
+            android:textColor="#e87416" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:layout_toRightOf="@+id/textViewName"
+            android:id="@+id/editTextName"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:textColor="#e87416" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/editTextPhone"
+            android:layout_below="@+id/textViewName"
+            android:id="@+id/textViewPhone"
+            android:textColor="#e87416" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:layout_below="@+id/textViewName"
+            android:layout_toRightOf="@id/textViewPhone"
+            android:id="@+id/editTextPhone"
+            android:inputType="phone"
+            android:maxLength="12"
+            android:textColor="#e87416" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekend"
+            android:textSize="20sp"
+            android:id="@+id/textViewWeekend"
+            android:layout_above="@+id/checkBox9to17"
+            android:layout_alignStart="@+id/editTextPhone"
+            android:textColor="#e87416" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxWeekend"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:textColor="#e87416" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9 - 17"
+            android:textSize="20sp"
+            android:id="@+id/textView9to17"
+            android:layout_above="@+id/checkBox17to1"
+            android:layout_alignStart="@+id/editTextPhone"
+            android:textColor="#e87416" />
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox9to17"
+            android:layout_below="@+id/checkBoxWeekend"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:textColor="#e87416" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17 -  1"
+            android:textSize="20sp"
+            android:id="@+id/textView17to1"
+            android:layout_above="@+id/checkBox1to9"
+            android:layout_alignStart="@+id/editTextPhone"
+            android:textColor="#e87416" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox17to1"
+            android:layout_below="@+id/checkBox9to17"
+            android:layout_alignStart="@+id/checkBox9to17"
+            android:checked="false"
+            android:textColor="#e87416" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 - 9"
+            android:textSize="20sp"
+            android:id="@+id/textView1to9"
+            android:layout_below="@+id/checkBox17to1"
+            android:layout_alignStart="@+id/editTextPhone"
+            android:textColor="#e87416" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox1to9"
+            android:layout_below="@+id/checkBox17to1"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:textColor="#e87416" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/btnSave"
+            android:background="#7b2323"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:id="@+id/btnShow"
+            android:background="#7b2323"
+            android:textColor="#fefefe" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show All"
+            android:id="@+id/btnShowAll"
+            android:background="#7b2323"
+            android:textColor="#fefefe" />
+
+
+    </LinearLayout>
+</LinearLayout>

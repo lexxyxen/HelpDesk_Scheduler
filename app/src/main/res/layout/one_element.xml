@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#605f5f">
+<LinearLayout
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="ID"
+        android:textSize="20sp"
+        android:textColor="#ed6e06"
+        android:id="@+id/textViewId" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textColor="#ed6e06"
+        android:id="@+id/textViewName" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="Phone"
+        android:textSize="20sp"
+        android:textColor="#ed6e06"
+        android:id="@+id/textViewPhone" />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="Availability"
+            android:textSize="20sp"
+            android:textColor="#ed6e06"
+            android:id="@+id/textViewAvailability" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="----"
+            android:textSize="20sp"
+            android:textColor="#ed6e06"
+            android:id="@+id/textViewAvailability1" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
